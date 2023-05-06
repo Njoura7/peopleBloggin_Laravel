@@ -1,16 +1,22 @@
-<script src="{{ env('TINYMCE_KEY') }}" referrerpolicy="origin"></script>
+ <script src="https://cdn.tiny.cloud/1/2m7v9w7zr6u0xmhjnskcwb25c5anu99gbsrx7sp0u0z9eciv/tinymce/6/tinymce.min.js"  referrerpolicy="origin"></script>
 <script>
     tinymce.init({
-      selector: 'textarea',
-      plugins: 'save anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
-      ui_mode: 'split',
-      min_height: 400,
-      toolbar: 'save undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat ',
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
-      mergetags_list: [
-        { value: 'First.Name', title: 'First Name' },
-        { value: 'Email', title: 'Email' },
-      ]
+      selector: 'textarea#myeditorinstance',
+    width: '100%',
+    autoresize_min_height: 200,
+      autoresize_max_height: 800,
+    plugins:[
+        'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'prewiew', 'anchor', 'pagebreak',
+        'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media', 
+        'table', 'emoticons', 'template', 'codesample'
+    ],
+    toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' + 
+    'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+    'forecolor backcolor emoticons',
+    menu: {
+        favs: {title: 'menu', items: 'code visualaid | searchreplace | emoticons'}
+    },
+    menubar: 'favs file edit view insert format tools table',
+    content_style: 'body{font-family:Helvetica,Arial,sans-serif; font-size:16px}'
     });
-  </script>
+  </script> 
