@@ -15,3 +15,4 @@
    <x-primary-button class="mt-4">{{ __('Post') }}</x-primary-button>
  </form>
 
+ 

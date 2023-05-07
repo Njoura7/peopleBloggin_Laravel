@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Post;
+
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response; 
@@ -22,10 +23,9 @@ class PostController extends Controller
 
     public function index(): View
     {
-        
-        return view('posts.index', [
-            'posts' => Post::with('user')->latest()->get(),
-        ]);
+       
+        $posts = Post::with('user')->latest()->get();
+        return view('posts.index', ['posts' => $posts]);
     }
 
     /**
