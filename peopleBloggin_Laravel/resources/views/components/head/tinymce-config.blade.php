@@ -18,15 +18,6 @@
     },
     menubar: 'favs file edit view insert format tools table',
     content_style: 'body{font-family:Helvetica,Arial,sans-serif; font-size:16px}',
-    setup: function (editor) {
-            editor.on('blur', function () {
-                editor.save(); // save content to textarea
-            });
-        }
-    });
-    
-    document.querySelector('form').addEventListener('submit', function() {
-        const content = tinymce.get('myeditorinstance').getContent({format: 'text'});
-        document.querySelector('textarea[name="body"]').value = content;
+
     });
   </script> 
