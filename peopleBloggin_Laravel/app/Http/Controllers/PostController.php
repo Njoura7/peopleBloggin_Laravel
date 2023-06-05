@@ -81,7 +81,7 @@ class PostController extends Controller
         $this->authorize('update', $post);
  
         $validated = $request->validate([
-            'body' => 'required|string|max:255',
+            'body' => 'required|string',
         ]);
  
         $post->update($validated);
