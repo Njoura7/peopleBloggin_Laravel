@@ -60,7 +60,7 @@ Contact For any inquiries or feedback, please contact the project
 maintainer:
 
 Name: Anas Mohamed Aziz Najjar
-Email: njoruawebdev@gmail.com
+Email: njourawebdev@gmail.com
 
 You can also submit issues on the GitHub repository for bug reports or
 feature requests.
