@@ -22,9 +22,7 @@
                             
                                <!-- Insert the blade containing the TinyMCE placeholder HTML element & the title placeholder -->
                          <x-forms.tinymce-editor/>
-                         <div class="mt-6 bg-white shadow-sm rounded-lg divide-y">
          
-        </div>
                         
                         </div>
                     </div>

@@ -1,4 +1,4 @@
- <script src="https://cdn.tiny.cloud/1/2m7v9w7zr6u0xmhjnskcwb25c5anu99gbsrx7sp0u0z9eciv/tinymce/6/tinymce.min.js"  referrerpolicy="origin"></script>
+ <script src="{{ env('TINYMCE_KEY') }}" referrerpolicy="origin"></script>
 <script>
     tinymce.init({
       selector: 'textarea#myeditorinstance',
@@ -18,6 +18,6 @@
     },
     menubar: 'favs file edit view insert format tools table',
     content_style: 'body{font-family:Helvetica,Arial,sans-serif; font-size:16px}',
-
+    
     });
   </script> 
