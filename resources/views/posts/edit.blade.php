@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
    
    <head>
   <!-- Insert the blade containing the TinyMCE configuration and source script -->

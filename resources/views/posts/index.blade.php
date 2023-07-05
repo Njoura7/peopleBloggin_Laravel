@@ -45,6 +45,13 @@
                                             <x-dropdown-link :href="route('posts.edit', $post)">
                                                 {{ __('Edit') }}
                                             </x-dropdown-link>
+                                            <form method="POST" action="{{ route('posts.destroy', $post) }}">
+                                            @csrf
+                                            @method('delete')
+                                            <x-dropdown-link :href="route('posts.destroy', $post)" onclick="event.preventDefault(); this.closest('form').submit();">
+                                                {{ __('Delete') }}
+                                            </x-dropdown-link>
+                                        </form>
                                         </x-slot>
                                     </x-dropdown>
                         @endif
@@ -52,7 +59,7 @@
 
                 <h2 class="mt-4 text-xl text-gray-900">{{ $post->title }}</h2>
 
-                <div class="mt-4 text-lg text-gray-900 w-full ">{!! ($post->body) !!}</div>
+                <div class="mt-4 text-lg text-gray-900 w-full ">{!! $post->body !!}</div>
 
             </div>
 
