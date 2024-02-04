@@ -33,14 +33,18 @@ Create a copy of the .env.example file and rename it to
 .env. 
 Update the necessary configuration settings, such as the database
 credentials. 
-Generate an application 
-key: php artisan key:generate 
+Generate an application key: 
+```php artisan key:generate ```
+
 Run database migrations: 
-php artisan migrate Start the development server:
-php artisan serve Access the application in your browser at
-http://localhost:8000. Please note that you may need to set up a local
-development environment with PHP and a supported database (e.g., MySQL)
-before running the application.
+``` php artisan migrate ```
+
+Start the development server:
+``` php artisan serve```
+
+Access the application in your browser at http://localhost:8000. 
+Please note that you may need to set up a local
+development environment with PHP and a supported database (e.g., MySQL) before running the application.
 
 ### Contributing 
 
