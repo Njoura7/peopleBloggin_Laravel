@@ -1,4 +1,4 @@
-<img src="public/assets/logo.png">
+<img src="public/assets/logo.png" style="display:block;margin:0 auto;">
 
 ## PeopleBloggin 
 
